@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>N. Sahithya – Stylish & Interactive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#todo">To‑Do</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="hero" class="container">
+  <h1 class="hero">Hi, I'm N. Sahithya</h1>
+  <p class="bio">I blend interactivity and design with clean, professional code.</p>
+</section>
+
+<section id="about" class="container">
+  <h2>About Me</h2>
+  <p>I’m a passionate web developer specializing in HTML, CSS & JavaScript, delivering polished and engaging experiences.</p>
+</section>
+
+<section id="todo" class="container">
+  <h2>To‑Do List</h2>
+  <div>
+    <input id="todo-input" placeholder="New task…">
+    <button id="add-btn">Add Task</button>
+  </div>
+  <ul id="todo-list"></ul>
+</section>
+
+<section id="products" class="container">
+  <h2>Product Showcase</h2>
+  <div class="controls">
+    <select id="filter-cat">
+      <option value="all">All</option>
+      <option>Electronics</option>
+      <option>Clothing</option>
+    </select>
+    <label>Max Price:
+      <input type="range" id="filter-price" min="500" max="200000" value="200000">
+      <span id="price-display">200000</span>
+    </label>
+    <select id="sort-by">
+      <option value="none">Sort By</option>
+      <option value="price-asc">Price ↑</option>
+      <option value="price-desc">Price ↓</option>
+      <option value="rating-desc">Rating ↓</option>
+    </select>
+  </div>
+  <div id="product-grid" class="grid"></div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Me</h2>
+  <form id="contactForm" class="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required minlength="5">
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Message" rows="5" required minlength="40"></textarea>
+    <input type="submit" value="Send Message">
+    <p id="formStatus" class="status"></p>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
